@@ -1,0 +1,3 @@
+[
+    { "keys": ["ctrl+shift+j"], "command": "json5_format" }
+]

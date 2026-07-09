@@ -1,0 +1,8 @@
+{
+    // Number of spaces per indent level
+    "indent": 4,
+    // Sort object keys alphabetically
+    "sort_keys": false,
+    // Escape non-ASCII characters
+    "ensure_ascii": false
+}
