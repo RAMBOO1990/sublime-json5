@@ -1,0 +1,12 @@
+Json5Formatter installed successfully!
+
+Usage:
+  - Open a .json or .json5 file
+  - Press Ctrl+Shift+J to format as JSON (comments preserved)
+  - Or use Command Palette (Ctrl+Shift+P) and search "JSON5:"
+
+Requirements:
+  - Python 3.x on system PATH
+  - pip install json5
+
+Enjoy!
