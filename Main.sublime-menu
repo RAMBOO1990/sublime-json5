@@ -17,7 +17,7 @@
                                 "command": "edit_settings",
                                 "args": {
                                     "base_file": "${packages}/Json5Formatter/Json5Formatter.sublime-settings",
-                                    "default": "{}"
+                                    "default": "// Settings in here override those in \"Json5Formatter/Json5Formatter.sublime-settings\"\n{\n\t$0\n}\n"
                                 }
                             },
                             {
@@ -25,7 +25,8 @@
                                 "command": "edit_settings",
                                 "args": {
                                     "base_file": "${packages}/Json5Formatter/Default.sublime-keymap",
-                                    "user_file": "${packages}/User/Default (${platform}).sublime-keymap"
+                                    "user_file": "${packages}/User/Default (${platform}).sublime-keymap",
+                                    "default": "[\n\t$0\n]\n"
                                 }
                             }
                         ]
