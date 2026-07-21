@@ -18,16 +18,26 @@ _MINIFY_CODE = (
 _PYTHON_CMD = None
 
 
+def _startupinfo():
+    if sublime.platform() == "windows":
+        info = subprocess.STARTUPINFO()
+        info.dwFlags |= subprocess.STARTF_USESHOWWINDOW
+        return info
+    return None
+
+
 def _find_python():
     global _PYTHON_CMD
     if _PYTHON_CMD is not None:
         return _PYTHON_CMD
+    startupinfo = _startupinfo()
     for cmd in ["py", "python"]:
         try:
             proc = subprocess.Popen(
                 [cmd, "--version"],
                 stdout=subprocess.PIPE,
                 stderr=subprocess.PIPE,
+                startupinfo=startupinfo,
             )
             proc.communicate()
             if proc.returncode == 0:
@@ -45,6 +55,7 @@ def _run(args, text):
         stdin=subprocess.PIPE,
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
+        startupinfo=_startupinfo(),
     )
     out, err = proc.communicate(text.encode("utf-8"))
     if proc.returncode != 0:
@@ -78,7 +89,7 @@ class Json5FormatCommand(sublime_plugin.TextCommand):
         s = sublime.load_settings(SETTINGS_FILE)
         indent = s.get("indent", 4)
 
-        from .jsonc_formatter import format_json5
+        from .lib.jsonc_formatter import format_json5
 
         regions = [r for r in view.sel() if not r.empty()]
         if not regions:

@@ -1,5 +1,12 @@
 [
     { "caption": "JSON5: Format as JSON", "command": "json5_format" },
     { "caption": "JSON5: Format as JSON5", "command": "json5_format_as_json5" },
-    { "caption": "JSON5: Minify", "command": "json5_minify" }
+    { "caption": "JSON5: Minify", "command": "json5_minify" },
+    {
+        "caption": "Preferences: Json5Formatter Settings",
+        "command": "edit_settings",
+        "args": {
+            "base_file": "${packages}/Json5Formatter/Json5Formatter.sublime-settings"
+        }
+    }
 ]
