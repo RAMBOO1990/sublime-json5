@@ -16,7 +16,16 @@
                                 "caption": "Settings",
                                 "command": "edit_settings",
                                 "args": {
-                                    "base_file": "${packages}/Json5Formatter/Json5Formatter.sublime-settings"
+                                    "base_file": "${packages}/Json5Formatter/Json5Formatter.sublime-settings",
+                                    "default": "{}"
+                                }
+                            },
+                            {
+                                "caption": "Key Bindings",
+                                "command": "edit_settings",
+                                "args": {
+                                    "base_file": "${packages}/Json5Formatter/Default.sublime-keymap",
+                                    "user_file": "${packages}/User/Default (${platform}).sublime-keymap"
                                 }
                             }
                         ]

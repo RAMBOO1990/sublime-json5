@@ -6,7 +6,8 @@
         "caption": "Preferences: Json5Formatter Settings",
         "command": "edit_settings",
         "args": {
-            "base_file": "${packages}/Json5Formatter/Json5Formatter.sublime-settings"
+            "base_file": "${packages}/Json5Formatter/Json5Formatter.sublime-settings",
+            "default": "{}"
         }
     }
 ]
