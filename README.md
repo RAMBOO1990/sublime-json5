@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/SublimeText-4-black) ![](https://img.shields.io/badge/License-MIT-green)
+[![](https://img.shields.io/badge/SublimeText-4-black)]() [![](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
 [**English**](README.md) | [**中文**](README_zh-CN.md)
 
@@ -24,6 +24,13 @@ A Sublime Text plugin that formats JSON/JSON5 files using the system Python's `j
 
 - [Python](https://www.python.org/) 3.x (on system PATH)
 - `json5` library: `pip install json5`
+
+### Package Control (Recommended)
+
+Search for **Json5Formatter** in Package Control:
+
+1. `Ctrl+Shift+P` → `Package Control: Install Package`
+2. Type `Json5Formatter` → Enter
 
 ### Manual Install
 

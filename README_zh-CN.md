@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/SublimeText-4-black) ![](https://img.shields.io/badge/License-MIT-green)
+[![](https://img.shields.io/badge/SublimeText-4-black)]() [![](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
 [**English**](README.md) | [**中文**](README_zh-CN.md)
 
@@ -24,6 +24,13 @@
 
 - [Python](https://www.python.org/) 3.x（已在系统 PATH 中）
 - `json5` 库：`pip install json5`
+
+### 通过 Package Control 安装（推荐）
+
+在 Package Control 中搜索 **Json5Formatter**：
+
+1. `Ctrl+Shift+P` → `Package Control: Install Package`
+2. 输入 `Json5Formatter` → 回车
 
 ### 手动安装
 
